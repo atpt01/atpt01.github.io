@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Rate My Dog</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One" rel="stylesheet" type='text/css'>
 
     <!-- Bootstrap3 -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -103,8 +103,27 @@
       <div class="row">
         <div class="col-xs-1 col-md-2"></div>
         <div class="col-xs-10 col-md-8">
-          <button type="button" class="btn btn-success flash">Click to make me blink!</button>
-          <button type="button" class="btn btn-success color">Change the color of my eyes!</button>
+          <button type="button" class="btn btn-success eyeflash">Click to make me blink!</button>
+          <button type="button" class="btn btn-success eyecolor">Change the color of my eyes!</button>
+<script>
+//flash button clicked, toggle laser class
+  $(".eyeflash").click(function(){
+    $(".doghead").toggleClass('eyes');
+  });
+
+//color button clicked...
+  $(".eyecolor").click(function(){
+//assign each named color a random number from 0-255
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+
+  var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
+
+  $("dog").css("background", randomRGBA);
+  });
+
+</script>
         </div>
         <div class="col-xs-1 col-md-2"></div>
       </div>
@@ -151,24 +170,6 @@
           $(document).ready(function(){
               $('[data-toggle="tooltip"]').tooltip();
           });
-        </script>
-
-        <script>
-        //flash button clicked, toggle laser class
-          $(".flash").click(function(){
-            $(".brain").toggleClass('eyes');
-          });
-
-        //color button clicked...
-          $(".color").click(function(){
-        //assign each named color a random number from 0-255
-          var red = Math.floor(Math.random() * 255);
-          var green = Math.floor(Math.random() * 255);
-          var blue = Math.floor(Math.random() * 255);
-        //display number
-          alert(red +"," + green + ","+ blue);
-          });
-
         </script>
 
       </body>
