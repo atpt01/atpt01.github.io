@@ -42,3 +42,53 @@ body{
     color: #777;
     text-align: center;
 }
+
+
+.dog{
+  
+}
+
+.right{
+  font-family:'Poller One',verdana,arial,sans-serif;
+  font-weight:bold;
+  font-size:150px;
+  color: saddlebrown;
+  transform: rotate(170deg);
+  -webkit-transform: rotate(170deg);
+  -moz-transform: rotate(170deg);
+  left: 100px;
+  top: 300px;
+  z-index:-1;
+}
+
+.left{
+  font-family:'Poller One',verdana,arial,sans-serif;
+  font-weight:bold;
+  font-size:150px;
+  color:saddlebrown;
+  transform:scaleY(-1) rotate(350deg);
+  -moz-transform:scaleY(-1) rotate(350deg);
+  -webkit-transform:scaleY(-1) rotate(350deg);
+  top: -1020px;
+  left:190px;
+  z-index:-1;
+}
+
+.doghead{
+  background:radial-gradient(circle, white 15%, transparent 40%), sienna;
+  background:-webkit-radial-gradient(circle, white 15%, transparent 40%), sienna;
+  background:-moz-radial-gradient(circle, white 15%, transparent 40%), sienna;
+  background-size:75px 150px;
+  height:150px;
+  width:150px;
+  border-radius:60px 60px 60px 60px;
+}
+
+.torso{
+  height:0;
+  width:140px;
+  border-bottom:200px solid sienna;
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  border-radius:100px 100px 20px 20px;
+}
