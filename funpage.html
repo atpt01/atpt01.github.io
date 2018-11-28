@@ -104,25 +104,11 @@
         <div class="col-xs-1 col-md-2"></div>
         <div class="col-xs-10 col-md-8">
           <button type="button" class="btn btn-success eyeflash">Click to make me blink!</button>
-          <button type="button" class="btn btn-success eyecolor">Change the color of my eyes!</button>
 <script>
 //flash button clicked, toggle laser class
   $(".eyeflash").click(function(){
     $(".doghead").toggleClass('eyes');
   });
-
-//color button clicked...
-  $(".eyecolor").click(function(){
-//assign each named color a random number from 0-255
-  var red = Math.floor(Math.random() * 255);
-  var green = Math.floor(Math.random() * 255);
-  var blue = Math.floor(Math.random() * 255);
-
-  var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
-
-  $("dog").css("background", randomRGBA);
-  });
-
 </script>
         </div>
         <div class="col-xs-1 col-md-2"></div>
