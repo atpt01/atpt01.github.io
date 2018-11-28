@@ -45,7 +45,9 @@ body{
 
 
 .dog{
-  
+  height:150px;
+  width:300px;
+  margin: 0 auto;
 }
 
 .right{
@@ -56,9 +58,23 @@ body{
   transform: rotate(170deg);
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
-  left: 100px;
-  top: 300px;
+  position: relative;
+  left: 50px;
+  top: -240px;
   z-index:-1;
+}
+
+.nose {
+  height: 0;
+  width: 40px;
+  border-top: 20px solid saddlebrown;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-radius: 20px 20px 100px 100px;
+  position: relative;
+  z-index: auto;
+  top: -330px;
+  left: 53px;
 }
 
 .left{
@@ -69,8 +85,9 @@ body{
   transform:scaleY(-1) rotate(350deg);
   -moz-transform:scaleY(-1) rotate(350deg);
   -webkit-transform:scaleY(-1) rotate(350deg);
-  top: -1020px;
-  left:190px;
+  position: relative;
+  top: -30px;
+  left: -50px;
   z-index:-1;
 }
 
