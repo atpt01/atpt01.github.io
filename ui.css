@@ -101,17 +101,17 @@ body{
 }
 
 @keyframes blink{
-  {
+  0% {
     background:radial-gradient(circle,saddlebrown 15%,transparent 40%), sienna;
   }
 }
 @-moz-keyframes blink{
-  {
+  0% {
     background:-moz-radial-gradient(circle,saddlebrown 15%,transparent 40%), sienna;
   }
 }
 @-webkit-keyframes blink{
-  {
+  0% {
     background:-webkit-radial-gradient(circle,saddlebrown 15%,transparent 40%), sienna;
   }
 }
