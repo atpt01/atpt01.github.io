@@ -101,25 +101,52 @@ body{
 }
 
 @keyframes blink{
-  0% {
-    background:radial-gradient(circle,saddlebrown 15%,transparent 40%), sienna;
+  25% {
+    background:radial-gradient(circle,red 15%,transparent 40%), sienna;
+  }
+  50% {
+    background:radial-gradient(circle,blue 15%,transparent 40%), sienna;
+  }
+  75% {
+    background:radial-gradient(circle,yellow 15%,transparent 40%), sienna;
+  }
+  100% {
+    background:radial-gradient(circle,green 15%,transparent 40%), sienna;
   }
 }
 @-moz-keyframes blink{
-  0% {
-    background:-moz-radial-gradient(circle,saddlebrown 15%,transparent 40%), sienna;
+  25% {
+    background:-moz-radial-gradient(circle,red 15%,transparent 40%), sienna;
+  }
+  50% {
+    background:-moz-radial-gradient(circle,blue 15%,transparent 40%), sienna;
+  }
+  75% {
+    background:-moz-radial-gradient(circle,yellow 15%,transparent 40%), sienna;
+  }
+  100% {
+    background:-moz-radial-gradient(circle,green 15%,transparent 40%), sienna;
   }
 }
 @-webkit-keyframes blink{
-  0% {
-    background:-webkit-radial-gradient(circle,saddlebrown 15%,transparent 40%), sienna;
+  25% {
+    background:-webkit-radial-gradient(circle,red 15%,transparent 40%), sienna;
+  }
+  50% {
+    background:-webkit-radial-gradient(circle,blue 15%,transparent 40%), sienna;
+  }
+  75% {
+    background:-webkit-radial-gradient(circle,yellow 15%,transparent 40%), sienna;
+  }
+  100% {
+    background:-webkit-radial-gradient(circle,green 15%,transparent 40%), sienna;
   }
 }
 
 .eyes{
-    animation:blink 1s infinite;
-    -webkit-animation:blink 1s infinite;
-    -moz-animation:blink 1s infinite;
+    animation:blink 2s infinite;
+    -webkit-animation:blink 2s infinite;
+    -moz-animation:blink 2s infinite;
 }
 
 .doghead{
